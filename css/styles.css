@@ -1,0 +1,115 @@
+.container{
+    display: flex;
+    background-color: blanchedalmond;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.title{
+    size: 40px;
+    margin: 10px auto 10px auto;
+    
+    /* text-black-600 font-mono text-3xl font-bold p-10 */
+}
+
+.slide-fade-enter-active {
+    transition: all .3s ease;
+  }
+  .slide-fade-leave-active {
+    transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+  }
+  .slide-fade-enter, .slide-fade-leave-to
+  /* .slide-fade-leave-active below version 2.1.8 */ {
+    transform: translateX(10px);
+    opacity: 0;
+  }
+  .container1 {
+    height: 100%;
+    /* Aquí el origen de la imagen */
+    background-image: url(blue.jpg);
+  /* Fijar la imagen de fondo este vertical y
+    horizontalmente y centrado */
+    background-position: center center;
+
+    /* Esta imagen no debe de repetirse */
+    background-repeat: no-repeat;
+  
+    /* COn esta regla fijamos la imagen en la pantalla. */
+    background-attachment: fixed;
+  
+    /* La imagen ocupa el 100% y se reescala */
+    background-size: cover;
+  
+    /* Damos un color de fondo mientras la imagen está cargando  */
+    background-color: #464646;
+  }
+
+  .container2 {
+    background-image: url(blue.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+    /* background-size: cover; */
+    background-size: 100% 100%;
+    /* background-size: 100% 100%; */
+    /* background-color: red; */
+    width:100vw;
+    height:89vh; 
+  }
+
+  .content {
+    /* display: table-cell; */
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  .containerD_web{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* background-color: aqua; */
+    align-items: center;
+  }
+
+  .width_1{
+    /* width: 30%; */
+    width: 600px;
+  }
+
+  .galeria {
+    height: calc( 300px + 3em);
+    width: 260px;
+    margin:1em auto;
+    border: 1px solid #555;
+    position: relative;  
+  }
+  
+  .galeria img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 3s;
+  }
+  
+  .galeria input[type=radio] {
+    position: relative;
+    bottom: calc(-300px - 1.5em);
+    left: .5em;
+  }
+  
+  .galeria input[type=radio]:nth-of-type(1):checked ~ img:nth-of-type(1) {
+    opacity: 1;
+  }
+  
+  .galeria input[type=radio]:nth-of-type(2):checked ~ img:nth-of-type(2) {
+    opacity: 1;
+  }
+  
+  .galeria input[type=radio]:nth-of-type(3):checked ~ img:nth-of-type(3) {
+    opacity: 1;
+  }
+  
+  .galeria input[type=radio]:nth-of-type(4):checked ~ img:nth-of-type(4) {
+    opacity: 1;
+  }
