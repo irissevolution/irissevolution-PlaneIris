@@ -8,12 +8,12 @@ function enviarEmail() {
     Host : "smtp.elasticemail.com",
     Username : "jaci994@hotmail.com",
     Password : "C3AD796D85AC757638901354E9F84D0E05EE",
-    To : 'jaciel.ipn@gmail.com',
+    To : 'irissevolution@gmail.com',
     From : "jaci994@hotmail.com",
     Subject : "Cotizacion",
     Body : DatosEnvio
 }).then(
-  message => alert(message)
+  message => alert("Mensaje enviado!")
 );
   }
   
