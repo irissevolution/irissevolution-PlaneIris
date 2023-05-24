@@ -3,21 +3,27 @@ function enviarSlack() {
   var nombre = document.getElementById("name").value;
   var correo = document.getElementById("email").value;
   var numero = document.getElementById("surname").value;
-  var DatosEnvio=info + "Datos contacto:  Nombre:"+ nombre +"Correo: "+correo+ " Número telefónico: "+numero
-  var settings = {
-    "url": "https://hooks.slack.com/services/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",
-    "method": "POST",
-    "timeout": 0,
-    "headers": {
-      "Content-type": "application/json"
-    },
-    "data": JSON.stringify({
-      "text": "Hello, World!"
-    }),
-  };
-  
-  $.ajax(settings).done(function (response) {
-    console.log(response);
+  var DatosEnvio="Nombre: "+ nombre +"\n Correo: "+correo+ "\n Número telefónico: " + numero + '\n\n Mensaje: ' +  info  
+
+  var myHeaders = new Headers();
+  myHeaders.append("Content-type", "application/json");
+  myHeaders.append("Access-Control-Allow-Origin", "*");
+
+  var raw = JSON.stringify({
+    "text": DatosEnvio
   });
 
-}
+  var requestOptions = {
+    method: 'POST',
+    headers: myHeaders,
+    body: raw,
+    redirect: 'follow',
+    mode: 'no-cors'
+  };
+
+  fetch("https://hooks.slack.com/services/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", requestOptions)
+    .then(response => response.text())
+    .then(result => console.log(result))
+    .catch(error => console.log('error', error));
+
+  }
