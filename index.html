@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="assets/css/templatemo-space-dynamic.css">
     <link rel="stylesheet" href="assets/css/animated.css">
     <link rel="stylesheet" href="assets/css/owl.css">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="index.js"></script>
 <!--
     
 TemplateMo 562 Space Dynamic
@@ -222,48 +224,56 @@ https://templatemo.com/tm-562-space-dynamic
       </div>
       <div class="row">
         <div class="col-lg-3 col-sm-6">
-          <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-            <div class="hidden-content">
-              <h4>Páginas WEB</h4>
-              <p>Trabajamos en conjunto para crear una página web única y atractiva, que refleje la identidad y valores de tu marca.</p>
+          <a href="#">
+            <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+              <div class="hidden-content">
+                <h4>Páginas WEB</h4>
+                <p>Trabajamos en conjunto para crear una página web única y atractiva, que refleje la identidad y valores de tu marca.</p>
+              </div>
+              <div class="showed-content">
+                <img src="assets/images/portfolio-image.png" alt="">
+              </div>
             </div>
-            <div class="showed-content">
-              <img src="assets/images/portfolio-imageWP1.png" alt="">
-            </div>
-          </div>
+          </a>
         </div>
         <div class="col-lg-3 col-sm-6">
-          <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.4s">
-            <div class="hidden-content">
-              <h4>Chatbots</h4>
-              <p>Desarrollamos chatbots eficientes y efectivos, que puedan responder a las preguntas y necesidades de los clientes en tiempo real.                </p>
+          <a href="#">
+            <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+              <div class="hidden-content">
+                <h4>Chatbots</h4>
+                <p>Desarrollamos chatbots eficientes y efectivos, que puedan responder a las preguntas y necesidades de los clientes en tiempo real.                </p>
+              </div>
+              <div class="showed-content">
+                <img src="assets/images/portfolio-image.png" alt="">
+              </div>
             </div>
-            <div class="showed-content">
-              <img src="assets/images/portfolio-imageChat.png" alt="">
-            </div>
-          </div>
+          </a>
         </div>
         <div class="col-lg-3 col-sm-6">
-          <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.5s">
-            <div class="hidden-content">
-              <h4>Inteligencia Artificial</h4>
-              <p>Si necitas crear un sistema de detección con visión atificial somos la solución.</p>
+          <a href="#">
+            <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+              <div class="hidden-content">
+                <h4>Inteligencia Artificial</h4>
+                <p>Si necitas crear un sistema de detección con visión atificial somos la solución.</p>
+              </div>
+              <div class="showed-content">
+                <img src="assets/images/portfolio-image.png" alt="">
+              </div>
             </div>
-            <div class="showed-content">
-              <img src="assets/images/portfolio-imageAI.png" alt="">
-            </div>
-          </div>
+          </a>
         </div>
         <div class="col-lg-3 col-sm-6">
-          <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.6s">
-            <div class="hidden-content">
-              <h4>Aplicaciones Moviles</h4>
-              <p>Nos aseguramos de que nuestras aplicaciones sean intuitivas y fáciles de usar, con una interfaz de usuario atractiva y amigable.</p>
+          <a href="#">
+            <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.6s">
+              <div class="hidden-content">
+                <h4>Aplicaciones Moviles</h4>
+                <p>Nos aseguramos de que nuestras aplicaciones sean intuitivas y fáciles de usar, con una interfaz de usuario atractiva y amigable.</p>
+              </div>
+              <div class="showed-content">
+                <img src="assets/images/portfolio-image.png" alt="">
+              </div>
             </div>
-            <div class="showed-content">
-              <img src="assets/images/portfolio-imageDevices.png" alt="">
-            </div>
-          </div>
+          </a>
         </div>
       </div>
     </div>
@@ -380,7 +390,7 @@ https://templatemo.com/tm-562-space-dynamic
               </div>
               <div class="col-lg-12">
                 <fieldset>
-                  <button type="submit" id="form-submit" class="main-button ">Enviar mensaje</button>
+                  <button type="button" onclick="enviarSlack()">Enviar mensaje</button>
                 </fieldset>
               </div>
             </div>
