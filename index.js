@@ -21,7 +21,9 @@ function enviarSlack() {
     mode: 'no-cors'
   };
 
-  fetch("https://hooks.slack.com/services/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", requestOptions)
+  var uri = "/services/T058H0SULF8/B05AEDRJJ4S/5XMXRPspeH2P4jr5tRBRJ31d"
+
+  fetch("https://hooks.slack.com" + uri, requestOptions)
     .then(response => response.text())
     .then(result => console.log(result))
     .catch(error => console.log('error', error));
