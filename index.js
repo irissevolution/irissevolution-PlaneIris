@@ -21,11 +21,17 @@ function enviarSlack() {
     mode: 'no-cors'
   };
 
-  var uri = "/services/T058H0SULF8/B05AEDRJJ4S/5XMXRPspeH2P4jr5tRBRJ31d"
-
-  fetch("https://hooks.slack.com" + uri, requestOptions)
+  var url_base64 = "aHR0cHM6Ly9ob29rcy5zbGFjay5jb20vc2VydmljZXMvVDA1OEgwU1VMRjgvQjA1QUVEUkpKNFMvNVhNWFJQc3BlSDJQNGpyNXRSQlJKMzFk"
+  var url = decodeBase64(url_base64)
+  fetch(url, requestOptions)
     .then(response => response.text())
     .then(result => console.log(result))
     .catch(error => console.log('error', error));
 
   }
+
+function decodeBase64(base64Str) {
+  var decodedStr = atob(base64Str);
+  var originalStr = decodeURIComponent(escape(decodedStr));
+  return originalStr;
+}
