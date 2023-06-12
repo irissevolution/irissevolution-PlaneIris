@@ -28,10 +28,26 @@ function enviarSlack() {
     .then(result => console.log(result))
     .catch(error => console.log('error', error));
 
+       var x = document.getElementById("myDIV");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+
   }
 
 function decodeBase64(base64Str) {
   var decodedStr = atob(base64Str);
   var originalStr = decodeURIComponent(escape(decodedStr));
   return originalStr;
+}
+
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+      x.style.display = "block";
+  } else {
+      x.style.display = "none";
+  }
 }

@@ -184,3 +184,96 @@
   z-index: 1;
   height: 100%;
   width: 100%; }
+
+  /* Black part */
+
+
+/* ==========================
+0.-Image responsive
+============================= */
+
+ /* Black part */
+ .popup-wrapper {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+z-index: 999;
+}
+ 
+.popup {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+	height: 300px;
+	background:url('../images/Pfondo_9.png') no-repeat center center;   
+	-webkit-background-size: cover; 
+	-moz-background-size: cover; 
+	-o-background-size: cover; 
+	background-size: cover;
+    margin: 20% auto;
+    padding: 20px;
+	position: relative; 
+	border-radius: 20px;
+	overflow: hidden;
+	
+}
+
+@media (max-width: 490px) {
+	.popup{
+		/* height: 280px; */
+		background:url('../images/Pfondo_9.png') no-repeat center center; 
+		-webkit-background-size: cover; 
+		-moz-background-size: cover; 
+		-o-background-size: cover; 
+		background-size: cover; 
+		/* padding: 5px;
+		background-color: #29ABE2; */
+	}  	
+
+}
+
+ 
+.popup a {
+    /* background: #5cdfa8;
+    color: white;
+    text-decoration: none;
+    padding: 6px 10px;
+    margin: 30px auto;
+    display: block;
+    width: 50%;
+	font-weight: bold; */
+	padding: 6px 10px;
+    margin: 180px 200px 40px 0px;
+	display: block;
+	width: 50%;
+	font-weight: bold;
+}
+ 
+.popup a:hover {
+    background: #027368;
+    transition: all 0.2s;
+	
+}
+ 
+.popup-close {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.pt-60{
+	padding-top: 60px;
+}
+.pb-60{
+	padding-bottom:  60px;
+}
+.shadow{
+	box-shadow: 10px 10px #fcf6ce;
+}
