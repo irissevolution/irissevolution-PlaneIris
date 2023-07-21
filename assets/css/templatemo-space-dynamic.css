@@ -1575,3 +1575,12 @@ responsive
     margin-left: 0px;
   }
 }
+
+
+.warnings {
+  width: 200px;
+  text-align: center;
+  margin: auto;
+  color: burlywood;
+  padding-top: 20px;
+}
